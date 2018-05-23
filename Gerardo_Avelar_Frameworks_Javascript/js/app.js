@@ -144,6 +144,7 @@ function dropImage(e) {
   _checkAndDestroy();
 };
 
+
 function _checkAndDestroy() {
   var prevCell = null;
   var figureLen = 0;
@@ -182,7 +183,7 @@ function _checkAndDestroy() {
           // Due to combo, current combo will be destroyed at the end of this procedure.
           // Then, the next cell will become new first cell
           figureLen += 1;
-          if (figureLen >= 4) {
+          if (figureLen >= 3) {
             validFigures += 1;
             figureStop = c;
             for (var ci = figureStart; ci <= figureStop; ci++) {
