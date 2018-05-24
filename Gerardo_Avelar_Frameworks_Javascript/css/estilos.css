@@ -34,6 +34,7 @@ body{
   background: rgba(232, 115, 6, 0.5);
   border-radius: 5px;
   height: 700px;
+  position: relative;
   display: flex;
   flex-flow: row wrap;
 }
@@ -118,7 +119,20 @@ div[class^='col']{
   flex-flow: column wrap;
   justify-content: flex-end;
   align-items: center;
+}
 
+#panel-tablero .row {
+	position: absolute;
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-transform: scale(0.9);
+	background-size: cover;
+	overflow: hidden;
+}
+
+#panel-tablero .row.glow {
+	z-index: 99;
+	box-shadow: inset 0 0 10px 10px rgba(255,255,255,1);
 }
 
 .elemento{
