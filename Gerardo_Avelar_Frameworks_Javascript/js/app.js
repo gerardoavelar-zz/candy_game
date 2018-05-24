@@ -1,4 +1,4 @@
-var rows = 7;
+/*var rows = 7;
 var cols = 7;
 var grid = [];
 var movCount = 0;
@@ -265,14 +265,14 @@ function _executeDestroyMemory() {
   _checkAndDestroy();
 }
 
-
+*/
 
 $(document).ready(function(){
 
   //Title color change
   function loop(){
-    $('.main-titulo').css('color','#DCFF0E');
-    $('.main-titulo').animate({
+    $('h1').css('color','#DCFF0E');
+    $('h1').animate({
       color: "#FFFFFF"
     }, Math.random()*1000, function(){
       loop();
